@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 const ListElement = (props) => {
-  const [message, setMsg] = useState(false);
+  const [message, setMsg] = useState(props.opened ? true : false);
   const handleClick = () => {
     setMsg(!message);
   };
