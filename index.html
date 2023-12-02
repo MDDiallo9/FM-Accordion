@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + React</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Overpass&family=Work+Sans&display=swap');
+      #root{
+        font-family: "Work-Sans";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: hsl(275, 100%, 97%);
+  background-image: url("./assets/images/background-pattern-desktop.svg");
+  background-position: 50% 0%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  @media (max-width:450px) {
+    background-image: url("./assets/images/background-pattern-mobile.svg");
+  }
+}
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
