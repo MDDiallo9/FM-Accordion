@@ -6,7 +6,7 @@ const ListElement = (props) => {
     setMsg(!message);
   };
   return (
-    <li onClick={handleClick} className="cursor-pointer">
+    <li tabIndex={0} onClick={handleClick} onFocus={handleClick} className="cursor-pointer hover:text-purple-500">
       <h2 className="flex justify-between text-xl font-bold">
         {props.title}
         <div className="shrink-0">
